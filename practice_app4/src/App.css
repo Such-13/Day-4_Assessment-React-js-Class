@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ 
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #3cdc99;
+}
+ 
+.app {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+ 
+header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+ 
+header h1 {
+  font-size: 2rem;
+}
+ 
+header p {
+  color: #666;
+  margin-top: 4px;
+}
+ 
+/* Form */
+.feedback-form {
+  background: #fff;
+  border: 1px solid #312ab9;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+ 
+.feedback-form h2 {
+  margin-bottom: 16px;
+}
+ 
+.feedback-form label {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 0.9rem;
+  color: #555;
+}
+ 
+.feedback-form input,
+.feedback-form textarea {
+  display: block;
+  width: 100%;
+  margin-top: 4px;
+  padding: 8px 10px;
+  border: 1px solid #d962c7;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+}
+ 
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  outline: none;
+  border-color: #4a90e2;
+}
+ 
+/* Stars */
+.stars {
+  display: flex;
+  gap: 6px;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  margin-left: 50px;
+}
+ 
+.star {
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: #ccc;
+}
+ 
+.star.active {
+  color: #f5a623;
+}
+ 
+/* Button */
+.feedback-form button {
+  background: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+ 
+.feedback-form button:hover {
+  background: #357abd;
+}
+ 
+/* List */
+.feedback-list h2 {
+  margin-bottom: 12px;
+}
+ 
+.feedback-list ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+ 
+.feedback-list li {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 14px 16px;
+}
+ 
+.feedback-list li.optimistic {
+  opacity: 0.5;
+  border-style: dashed;
+}
+ 
+.feedback-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+ 
+.rating {
+  color: #f5a623;
+}
+ 
+.feedback-list p {
+  font-size: 0.95rem;
+  color: #444;
+}
+ 
+.sending-tag {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 0.75rem;
+  color: #999;
+}
+ 
+.empty {
+  text-align: center;
+  color: #999;
+}
